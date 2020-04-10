@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>LetterServelt</servlet-name>
+        <servlet-class>com.common.servlets.LetterServelt</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BillServelt</servlet-name>
+        <servlet-class>com.common.servlets.BillServelt</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LetterServelt</servlet-name>
+        <url-pattern>/LetterServelt</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BillServelt</servlet-name>
+        <url-pattern>/BillServelt</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
